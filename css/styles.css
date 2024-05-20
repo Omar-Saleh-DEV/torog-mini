@@ -1,0 +1,594 @@
+/* Ensure body takes full height */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/indexbg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Lato", sans-serif;
+}
+
+#faqpage {
+    background-image: url('../img/faqbg.png');
+}
+
+#requestpage {
+    background-image: url('../img/bgaqw.png');
+}
+
+#getpage {
+    background-image: url('../img/faqbg.png');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar {
+    background-color: transparent;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin: 5px 16%;
+}
+
+.navbar-item {
+    color: white !important;
+}
+
+.navbar-item img {
+    max-height: 3rem;
+}
+
+.navbar-burger {
+    color: white;
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    /* Remove background from hero */
+}
+
+.hero-body {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 1.8rem;
+
+}
+
+.hero .title,
+.hero .subtitle {
+    color: white;
+}
+
+.content-box {
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    flex: 1;
+    max-width: 50%;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-top: 10px;
+    /* Reduce the margin-top */
+}
+
+.progress-container {
+    margin-top: 10px;
+    /* Reduce the margin-top */
+    max-width: 50%;
+
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #03e9f4;
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #03e9f4;
+    border-radius: 10px;
+}
+
+.neon-button {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 20px 20px 0px 20px;
+    /* Reduce the margin */
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.neon-button:hover {
+    color: #050801;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.neon-button span {
+    position: absolute;
+    display: block;
+}
+
+.neon-button-1 {
+    color: #03e9f4;
+}
+
+.neon-button-1:hover {
+    background: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+
+.neon-button-1 span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1.2s linear infinite;
+}
+
+.neon-button-1 span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1.2s linear infinite;
+    animation-delay: 0.25s;
+}
+
+.neon-button-1 span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1.2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.neon-button-1 span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1.2s linear infinite;
+    animation-delay: 0.75s;
+}
+
+.neon-button-3 {
+    color: #74b72e;
+}
+
+.neon-button-3:hover {
+    background: #74b72e;
+    box-shadow: 0 0 5px #74b72e, 0 0 25px #74b72e, 0 0 50px #74b72e, 0 0 200px #74b72e;
+}
+
+.neon-button-3 span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #74b72e);
+    animation: animate1 1.2s linear infinite;
+}
+
+.neon-button-3 span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #74b72e);
+    animation: animate2 1.2s linear infinite;
+    animation-delay: 0.25s;
+}
+
+.neon-button-3 span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #74b72e);
+    animation: animate3 1.2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.neon-button-3 span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #74b72e);
+    animation: animate4 1.2s linear infinite;
+    animation-delay: 0.75s;
+}
+
+.neon-button-2 {
+    color: #ffd700;
+}
+
+.neon-button-2:hover {
+    background: #ffd700;
+    box-shadow: 0 0 5px #ffd700, 0 0 25px #ffd700, 0 0 50px #ffd700, 0 0 200px #ffd700;
+}
+
+.neon-button-2 span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffd700);
+    animation: animate1 1.2s linear infinite;
+}
+
+.neon-button-2 span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffd700);
+    animation: animate2 1.2s linear infinite;
+    animation-delay: 0.25s;
+}
+
+.neon-button-2 span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ffd700);
+    animation: animate3 1.2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.neon-button-2 span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffd700);
+    animation: animate4 1.2s linear infinite;
+    animation-delay: 0.75s;
+}
+
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* Footer styles */
+.footer {
+    background: transparent;
+    color: white;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    position: relative;
+    margin: 2px 16%;
+    font-size: 13px;
+}
+
+.footer .columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer .social-icon {
+    display: inline-block;
+    margin-left: 40px;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.footer .social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer .social-icon i {
+    font-size: 20px;
+}
+
+.hero.is-fullheight {
+    min-height: 85vh;
+}
+
+.navbar-item-text {
+    margin-left: 12px;
+}
+
+.navbar-item-text span {
+    font-size: 14px;
+    display: block;
+}
+
+.progress-text {
+
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    line-height: 1.125;
+    margin-bottom: 2rem;
+}
+
+.columns.is-vcentered {
+    align-items: normal;
+}
+
+.column.content-box {
+    margin-right: 20px;
+}
+
+.column.content-box.progress-container {
+    margin-left: 10px;
+}
+
+
+
+/* Custom progress bar */
+.custom-progress {
+    position: relative;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 33px;
+}
+
+.progress-bar {
+    background-color: #74b72e;
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    /* Same as the height to center the text vertically */
+    color: black;
+    border-radius: 10px;
+}
+
+.progress-percentage {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.title.is-2 {
+    color: #74b72e;
+}
+
+
+.title:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.title:not(.is-spaced)+.subtitle {
+    margin-top: -0.25rem;
+}
+
+.subtitle {
+
+    font-size: 1.3rem;
+
+}
+
+
+
+/* Custom progress bar */
+.custom-progress {
+    position: relative;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress-bar {
+    background-color: #03e9f4;
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    /* Same as the height to center the text vertically */
+    color: white;
+    border-radius: 10px;
+}
+
+.progress-percentage {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* FAQ styles */
+.faq {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.faq-answer {
+    display: none;
+
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+#faq {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar {
+        margin: 5px 1%;
+    }
+
+    .footer {
+        margin: 5px 1%;
+    }
+
+    .hero-body {
+        padding: 5rem 3rem;
+    }
+
+    .progress-container {
+        max-width: 100%;
+    }
+
+    .content-box {
+        max-width: 100%;
+    }
+
+    .column.content-box.progress-container {
+        margin-left: 0px;
+    }
+
+    .column.content-box {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width: 909px),
+print {
+    .hero-body {
+        padding: 5rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hero-body {
+        padding: 5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: black;
+        box-shadow: 0 8px 16px rgba(10, 10, 10, .1);
+        padding: .5rem 0;
+    }
+}
+
+#request {
+    max-width: 100%;
+}
+
+#request .label {
+    color: white;
+    text-align: justify !important;
+}

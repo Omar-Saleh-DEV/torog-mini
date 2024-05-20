@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronet Governance Tokens - Get Tokens</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="getpage">
+    <!-- Navigation Bar -->
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="img/wlogo.png" alt="Toronet Logo">
+                <div class="navbar-item-text">
+                    <span><strong>TOROG</strong></span>
+                    <span>Toronet Governance Tokens</span>
+                </div>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="https://toronet.org/">
+                    Toronet Site
+                </a>
+                <a class="navbar-item" href="https://toronet.org/team/">
+                    Toronet Team
+                </a>
+                <a class="navbar-item" href="faq.html">
+                    FAQs
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero is-fullheight hero-background">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <!-- Request Token Form -->
+                    <div id="request" class="content-box">
+                        <h1 class="title">Get Token</h1>
+                        <form action="#" method="post" class="request-form">
+                            <div class="field">
+                                <label class="label">Wallet Address:</label>
+                                <div class="control">
+                                    <input class="input" type="text" name="adress" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">How many TOROGs would you like to obtain? </label>
+                                <div class="control">
+                                    <input class="input" type="text" name="torgo" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Preferred fiat currency? </label>
+                                <div class="control">
+                                    <input class="input" type="text" name="fiat" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Total Value: </label>
+                                <div class="control">
+                                    <input class="input" type="text" name="total" required>
+                                </div>
+                            </div>
+
+
+                            <div id="spebutton" class="field">
+                                <button type="submit" class="button is-primary">Submit Request</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <div class="columns is-mobile">
+                    <div class="column has-text-left">
+                        <p>
+                            TOROGs are intended for use as a governance utility of the Toronet platform, deploying smart
+                            contracts,
+                            admitting community nodes, and enabling the community to shape the direction of the
+                            platform. It is not
+                            intended as a security, and there is no promise implied or expressed of TOROGs growing in
+                            value as a token.
+                        </p>
+                    </div>
+                    <div class="column has-text-right">
+                        <a href="https://x.com" target="_blank" class="social-icon">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://discord.com" target="_blank" class="social-icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
