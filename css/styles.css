@@ -497,8 +497,8 @@ progress::-moz-progress-bar {
 }
 
 .faq-question {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    background: white;
+    color: #4F5B66;
     border: none;
     width: 100%;
     padding: 15px;
@@ -506,10 +506,11 @@ progress::-moz-progress-bar {
     cursor: pointer;
     border-radius: 10px;
     transition: background 0.3s;
+    font-style: italic;
 }
 
 .faq-question:hover {
-    background: rgba(0, 0, 0, 0.7);
+    background: #F5F5F5;
 }
 
 .faq-answer {
@@ -607,7 +608,8 @@ print {
 
 #maintitlep {
     letter-spacing: 4px;
-    font-family: 'Lemon/Milk light', sans-serif;
+    font-family: 'Lemon/Milk', sans-serif;
+    font-weight: 800;
 }
 
 #torofirst {
