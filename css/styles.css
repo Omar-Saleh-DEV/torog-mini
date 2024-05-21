@@ -6,24 +6,14 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-image: url('../img/indexbg.png');
+    background-color: #F5F5F5;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-#faqpage {
-    background-image: url('../img/faqbg.png');
-}
 
-#requestpage {
-    background-image: url('../img/bgaqw.png');
-}
-
-#getpage {
-    background-image: url('../img/faqbg.png');
-}
 
 body {
     display: flex;
@@ -43,11 +33,11 @@ main {
     left: 0;
     right: 0;
     z-index: 1000;
-    margin: 5px 16%;
+    margin: 5px 2%;
 }
 
 .navbar-item {
-    color: white !important;
+    color: #4F5B66 !important;
 }
 
 .navbar-item img {
@@ -55,7 +45,7 @@ main {
 }
 
 .navbar-burger {
-    color: white;
+    color: #4F5B66 !important;
 }
 
 .hero {
@@ -78,23 +68,25 @@ main {
 
 .hero .title,
 .hero .subtitle {
-    color: white;
+    color: #4F5B66;
 }
 
 .content-box {
     margin-top: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: white;
     padding: 20px;
     border-radius: 10px;
     color: white;
     flex: 1;
     max-width: 50%;
+    box-shadow: 0 .5em 1em -.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
 }
 
 .box {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    background: white;
+    color: #4F5B66;
     margin-top: 10px;
+
     /* Reduce the margin-top */
 }
 
@@ -118,12 +110,12 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: #03e9f4;
+    background-color: #FFD700;
     border-radius: 10px;
 }
 
 progress::-moz-progress-bar {
-    background-color: #03e9f4;
+    background-color: #FFD700;
     border-radius: 10px;
 }
 
@@ -139,6 +131,7 @@ progress::-moz-progress-bar {
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
+    font-weight: 700;
 }
 
 .neon-button:hover {
@@ -152,12 +145,12 @@ progress::-moz-progress-bar {
 }
 
 .neon-button-1 {
-    color: #03e9f4;
+    color: #FFD700;
 }
 
 .neon-button-1:hover {
-    background: #03e9f4;
-    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+    background: #FFD700;
+    box-shadow: 0 0 5px #FFD700, 0 0 25px #FFD700, 0 0 50px #FFD700, 0 0 200px #FFD700;
 }
 
 .neon-button-1 span:nth-child(1) {
@@ -165,7 +158,7 @@ progress::-moz-progress-bar {
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
+    background: linear-gradient(90deg, transparent, #FFD700);
     animation: animate1 1.2s linear infinite;
 }
 
@@ -174,7 +167,7 @@ progress::-moz-progress-bar {
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
+    background: linear-gradient(180deg, transparent, #FFD700);
     animation: animate2 1.2s linear infinite;
     animation-delay: 0.25s;
 }
@@ -184,7 +177,7 @@ progress::-moz-progress-bar {
     right: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
+    background: linear-gradient(270deg, transparent, #ffd700);
     animation: animate3 1.2s linear infinite;
     animation-delay: 0.5s;
 }
@@ -194,18 +187,18 @@ progress::-moz-progress-bar {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
+    background: linear-gradient(360deg, transparent, #ffd700);
     animation: animate4 1.2s linear infinite;
     animation-delay: 0.75s;
 }
 
 .neon-button-3 {
-    color: #74b72e;
+    color: #ffd700;
 }
 
 .neon-button-3:hover {
-    background: #74b72e;
-    box-shadow: 0 0 5px #74b72e, 0 0 25px #74b72e, 0 0 50px #74b72e, 0 0 200px #74b72e;
+    background: #ffd700;
+    box-shadow: 0 0 5px #ffd700, 0 0 25px #ffd700, 0 0 50px #ffd700, 0 0 200px #ffd700;
 }
 
 .neon-button-3 span:nth-child(1) {
@@ -213,7 +206,7 @@ progress::-moz-progress-bar {
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #74b72e);
+    background: linear-gradient(90deg, transparent, #ffd700);
     animation: animate1 1.2s linear infinite;
 }
 
@@ -222,7 +215,7 @@ progress::-moz-progress-bar {
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #74b72e);
+    background: linear-gradient(180deg, transparent, #ffd700);
     animation: animate2 1.2s linear infinite;
     animation-delay: 0.25s;
 }
@@ -232,7 +225,7 @@ progress::-moz-progress-bar {
     right: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #74b72e);
+    background: linear-gradient(270deg, transparent, #ffd700);
     animation: animate3 1.2s linear infinite;
     animation-delay: 0.5s;
 }
@@ -242,7 +235,7 @@ progress::-moz-progress-bar {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #74b72e);
+    background: linear-gradient(360deg, transparent, #ffd700);
     animation: animate4 1.2s linear infinite;
     animation-delay: 0.75s;
 }
@@ -347,7 +340,7 @@ progress::-moz-progress-bar {
     padding: 1rem 1.5rem;
     z-index: 1000;
     position: relative;
-    margin: 2px 16%;
+    margin: 2px 2%;
     font-size: 13px;
 }
 
@@ -361,7 +354,7 @@ progress::-moz-progress-bar {
 .footer .social-icon {
     display: inline-block;
     margin-left: 40px;
-    color: white;
+    color: #4F5B66;
     transition: transform 0.3s;
 }
 
@@ -389,10 +382,13 @@ progress::-moz-progress-bar {
 .progress-text {
 
     font-size: 1.5rem;
-    color: white;
-    font-weight: 600;
+    color: #0E6938;
+    font-weight: 700;
     line-height: 1.125;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+
 }
 
 .columns.is-vcentered {
@@ -421,7 +417,7 @@ progress::-moz-progress-bar {
 }
 
 .progress-bar {
-    background-color: #74b72e;
+    background-color: #0E6938;
     height: 100%;
     text-align: center;
     line-height: 20px;
@@ -441,12 +437,13 @@ progress::-moz-progress-bar {
 }
 
 .title.is-2 {
-    color: #74b72e;
+    color: #0E6938;
 }
 
 
 .title:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+
 }
 
 .title:not(.is-spaced)+.subtitle {
@@ -461,7 +458,6 @@ progress::-moz-progress-bar {
 
 
 
-/* Custom progress bar */
 .custom-progress {
     position: relative;
     width: 100%;
@@ -469,14 +465,14 @@ progress::-moz-progress-bar {
     border-radius: 10px;
     overflow: hidden;
     height: 20px;
+    border: 2px solid #ffd700;
 }
 
 .progress-bar {
-    background-color: #03e9f4;
+    background-color: #0E6938;
     height: 100%;
     text-align: center;
     line-height: 20px;
-    /* Same as the height to center the text vertically */
     color: white;
     border-radius: 10px;
 }
@@ -519,7 +515,7 @@ progress::-moz-progress-bar {
 .faq-answer {
     display: none;
 
-    color: white;
+    color: #4F5B66;
     padding: 15px;
     border-radius: 10px;
     margin-top: 5px;
@@ -534,6 +530,8 @@ progress::-moz-progress-bar {
 }
 
 @media only screen and (max-width: 900px) {
+
+
     .navbar {
         margin: 5px 1%;
     }
@@ -543,7 +541,8 @@ progress::-moz-progress-bar {
     }
 
     .hero-body {
-        padding: 5rem 3rem;
+        padding: 0rem 3rem;
+        padding-top: 9rem;
     }
 
     .progress-container {
@@ -566,13 +565,20 @@ progress::-moz-progress-bar {
 @media screen and (min-width: 909px),
 print {
     .hero-body {
-        padding: 5rem 3rem;
+        padding: 0rem 3rem;
+        padding-top: 9rem;
     }
+
+
 }
 
 @media only screen and (max-width: 900px) {
     .hero-body {
         padding: 5rem 2rem;
+    }
+
+    #fbcmtitle {
+        margin-top: 0rem !important;
     }
 }
 
@@ -589,6 +595,89 @@ print {
 }
 
 #request .label {
-    color: white;
+    color: #4F5B66;
     text-align: justify !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+#letterg {
+    color: #0e6938;
+}
+
+#maintitlep {
+    letter-spacing: 4px;
+    font-family: 'Lemon/Milk light', sans-serif;
+}
+
+#torofirst {
+    letter-spacing: 10px !important;
+
+}
+
+#subpsale {
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+}
+
+#fbcmtitle {
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+#countdown {
+    font-size: 28px;
+}
+
+#turbox {
+    color: #0e6938;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+#getinv {
+    color: #0e6938;
+}
+
+#getinvt {
+    color: #4F5B66;
+}
+
+.button.is-primary {
+    background-color: white;
+    border-color: #ffd700;
+    border-width: 2px;
+    color: #4F5B66;
+}
+
+#request {
+    margin-top: 10px;
+    background: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    flex: 1;
+    box-shadow: none;
+
+}
+
+.input {
+    background-color: #fff;
+    border-color: white;
+    border-radius: 4px;
+    color: #363636;
+}
+
+#aster {
+    color: #4F5B66;
+    font-size: 12px;
+}
+
+#requesttitlepage {
+    font-family: 'Lemon/Milk light', sans-serif;
+    letter-spacing: 8px;
+    margin-bottom: 4rem;
 }
